@@ -36,7 +36,6 @@ public class AdminView extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,6 +58,7 @@ public class AdminView extends javax.swing.JFrame {
         jPanel4.add(jLabel1);
         jLabel1.setBounds(318, 11, 228, 44);
 
+        advnu.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         advnu.setText("Add Venue");
         advnu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,8 +66,9 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(advnu);
-        advnu.setBounds(90, 140, 110, 40);
+        advnu.setBounds(60, 140, 130, 40);
 
+        adph.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         adph.setText("Add Photographer");
         adph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,20 +76,29 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(adph);
-        adph.setBounds(230, 140, 130, 40);
+        adph.setBounds(60, 200, 200, 40);
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setText("Add Budget");
         jPanel4.add(jButton2);
-        jButton2.setBounds(400, 140, 110, 40);
+        jButton2.setBounds(60, 260, 140, 40);
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton3.setText("Booking Details");
         jPanel4.add(jButton3);
-        jButton3.setBounds(550, 140, 120, 40);
+        jButton3.setBounds(60, 320, 180, 40);
 
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton4.setText("Add music system");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton4);
-        jButton4.setBounds(700, 140, 120, 40);
+        jButton4.setBounds(60, 380, 193, 40);
 
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setText("Cancel");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,11 +106,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton5);
-        jButton5.setBounds(360, 420, 140, 30);
-
-        jButton6.setText("jButton5");
-        jPanel4.add(jButton6);
-        jButton6.setBounds(110, 490, 73, 23);
+        jButton5.setBounds(610, 540, 130, 40);
         jPanel4.add(jLabel4);
         jLabel4.setBounds(0, 0, 900, 600);
 
@@ -152,6 +158,10 @@ public class AdminView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -195,7 +205,6 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
