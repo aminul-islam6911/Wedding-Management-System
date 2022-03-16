@@ -1,3 +1,5 @@
+//this is kayoum
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -35,6 +37,7 @@ public class AdminView extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,6 +90,15 @@ public class AdminView extends javax.swing.JFrame {
         jPanel4.add(jButton4);
         jButton4.setBounds(700, 140, 120, 40);
 
+        jButton5.setText("Cancel");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton5);
+        jButton5.setBounds(360, 420, 140, 30);
+
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\aikay\\Downloads\\img_105661_blustone_bg.jpg")); // NOI18N
         jPanel4.add(jLabel4);
         jLabel4.setBounds(0, 0, 900, 600);
@@ -135,6 +147,10 @@ public class AdminView extends javax.swing.JFrame {
         p.setVisible(true);
     }//GEN-LAST:event_adphActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -177,6 +193,7 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
