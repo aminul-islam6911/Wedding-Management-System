@@ -1,3 +1,4 @@
+//hellow
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -36,6 +37,7 @@ public class AdminView extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,10 +88,12 @@ public class AdminView extends javax.swing.JFrame {
         jButton4.setText("Add music system");
         jPanel4.add(jButton4);
         jButton4.setBounds(700, 140, 120, 40);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\aikay\\Downloads\\img_105661_blustone_bg.jpg")); // NOI18N
         jPanel4.add(jLabel4);
         jLabel4.setBounds(0, 0, 900, 600);
+
+        jButton5.setText("jButton5");
+        jPanel4.add(jButton5);
+        jButton5.setBounds(110, 490, 73, 23);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -177,6 +181,7 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
