@@ -45,9 +45,9 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(360, 420, 150, 50);
+        jButton1.setBounds(390, 450, 150, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\aikay\\Downloads\\wedd2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_homepage.jpg"))); // NOI18N
         jPanel2.add(jLabel1);
         jLabel1.setBounds(0, 0, 900, 600);
 
