@@ -58,7 +58,7 @@ public class login extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("Password");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(300, 290, 140, 35);
+        jLabel3.setBounds(300, 260, 140, 35);
 
         txtuser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +66,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(txtuser);
-        txtuser.setBounds(460, 240, 165, 35);
+        txtuser.setBounds(460, 210, 165, 35);
 
         btncancel.setBackground(new java.awt.Color(255, 51, 51));
         btncancel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
@@ -85,7 +85,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(txtpass);
-        txtpass.setBounds(460, 290, 165, 35);
+        txtpass.setBounds(460, 260, 165, 35);
 
         usrsignbt.setBackground(new java.awt.Color(0, 255, 0));
         usrsignbt.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
@@ -101,17 +101,17 @@ public class login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Username");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(300, 240, 140, 35);
+        jLabel2.setBounds(300, 210, 140, 35);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel6.setText("Customer");
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(350, 160, 174, 44);
+        jLabel6.setBounds(360, 130, 174, 44);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         jLabel1.setText("Login");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(360, 10, 174, 61);
+        jLabel1.setBounds(380, 10, 174, 61);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("Are You Admin");
