@@ -1,7 +1,9 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -13,8 +15,9 @@ public class Newuser extends javax.swing.JFrame {
     }
     
     Connection con;
-    PreparedStatement pst;
-
+    Statement pst;
+    ResultSet rs;
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -272,27 +275,17 @@ public class Newuser extends javax.swing.JFrame {
         else
         {
             try {
-                String username = txtuser.getText();
-                String confirmpass = txtconfirm.getText();
-                String firstname = txtuser1.getText();
-                String lastname = txtuser2.getText();
-                String gander = (String)jComboBox1.getSelectedItem();
-                String age = jTextField2.getText();
-                String mobile = jTextField3.getText();
-                String email = jTextField4.getText();
-                
-                Class.forName("com.mysql.cj.jdbc.Driver");
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/wedding_management","root","12345");
-                pst = con.prepareStatement("insert into account(uname,pass,fname,lname,gander,age,mobile,email)values(?,?,?,?,?,?,?,?)");
-                pst.setString(1, username);
-                pst.setString(2, confirmpass);
-                pst.setString(3, firstname);
-                pst.setString(4, lastname);
-                pst.setString(5, gander);
-                pst.setString(6, age);
-                pst.setString(7, mobile);
-                pst.setString(8, email);
-                pst.executeUpdate();
+                PreparedStatement add = con.prepareStatement("insert into account(uname,pass,fname,lname,gander,age,mobile,email)values(?,?,?,?,?,?,?,?)");
+                add.setString(1, txtuser.getText());
+                add.setString(2, txtconfirm.getText());
+                add.setString(3, txtuser1.getText());
+                add.setString(4, txtuser2.getText());
+                add.setString(5, jComboBox1.getSelectedItem().toString());
+                add.setString(6, jTextField2.getText());
+                add.setString(7, jTextField3.getText());
+                add.setString(8, jTextField4.getText());
+                add.executeUpdate();
                 JOptionPane.showMessageDialog(this,"New User Added");
                 txtuser.setText("");
                 txtpass.setText("");
@@ -303,13 +296,11 @@ public class Newuser extends javax.swing.JFrame {
                 jTextField2.setText("");
                 jTextField3.setText("");
                 jTextField4.setText("");
-                txtuser1.requestFocus();
                 
-            } catch (ClassNotFoundException | SQLException ex) {
-                Logger.getLogger(Newuser.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
-
     }//GEN-LAST:event_createActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
