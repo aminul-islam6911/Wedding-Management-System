@@ -10,7 +10,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.proteanit.sql.DbUtils;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -29,7 +28,7 @@ public class admenu extends javax.swing.JFrame {
      */
     public admenu() {
         initComponents();
-        venue_load();
+        menu_load();
         foodid.requestFocus();
     }
     Connection con;
@@ -54,7 +53,7 @@ public class admenu extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        venuetable = new javax.swing.JTable();
+        menutable = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -98,8 +97,8 @@ public class admenu extends javax.swing.JFrame {
             }
         });
 
-        venuetable.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        venuetable.setModel(new javax.swing.table.DefaultTableModel(
+        menutable.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        menutable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -107,13 +106,13 @@ public class admenu extends javax.swing.JFrame {
                 "Food id", "Food name", "Food price"
             }
         ));
-        venuetable.setRowHeight(20);
-        venuetable.addMouseListener(new java.awt.event.MouseAdapter() {
+        menutable.setRowHeight(20);
+        menutable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                venuetableMouseClicked(evt);
+                menutableMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(venuetable);
+        jScrollPane1.setViewportView(menutable);
 
         jButton4.setText("Clear");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +200,7 @@ public class admenu extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-public void venue_load()
+public void menu_load()
 {
     int c;
     try{
@@ -212,7 +211,7 @@ public void venue_load()
         ResultSetMetaData rsd = rs.getMetaData();
         c = rsd.getColumnCount();
             
-        d = (DefaultTableModel)venuetable.getModel();
+        d = (DefaultTableModel)menutable.getModel();
         d.setRowCount(0);
         
         while(rs.next())
@@ -255,7 +254,7 @@ private void clear()
                 Statement Add = con.createStatement();
                 Add.executeUpdate(updatequery);
                 JOptionPane.showMessageDialog(this,"Menu Record Updated");
-                venue_load();
+                menu_load();
                 clear();
             } catch (SQLException e) {
                 e.printStackTrace();}
@@ -273,7 +272,7 @@ private void clear()
                 add.executeUpdate();
                 JOptionPane.showMessageDialog(this,"New Menu Added");
                 con.close();
-                venue_load();
+                menu_load();
                 clear();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -295,7 +294,7 @@ private void clear()
             Statement Add = con.createStatement();
             Add.executeUpdate(deletequery);
             JOptionPane.showMessageDialog(this,"Menu Record Deleted");
-            venue_load();
+            menu_load();
             clear();
 
         } catch (SQLException ex) {
@@ -304,10 +303,10 @@ private void clear()
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void venuetableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venuetableMouseClicked
+    private void menutableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menutableMouseClicked
         // table
-        d = (DefaultTableModel)venuetable.getModel();
-        int selecIndex = venuetable.getSelectedRow();
+        d = (DefaultTableModel)menutable.getModel();
+        int selecIndex = menutable.getSelectedRow();
 
         foodid.setText(d.getValueAt(selecIndex, 0).toString());
         foodname.setText(d.getValueAt(selecIndex, 1).toString());
@@ -315,7 +314,7 @@ private void clear()
 
         jButton1.setEnabled(false);
         foodid.setEnabled(false);
-    }//GEN-LAST:event_venuetableMouseClicked
+    }//GEN-LAST:event_menutableMouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // Clear Button
@@ -372,6 +371,6 @@ private void clear()
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable venuetable;
+    private javax.swing.JTable menutable;
     // End of variables declaration//GEN-END:variables
 }
