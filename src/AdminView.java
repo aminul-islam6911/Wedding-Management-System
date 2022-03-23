@@ -31,10 +31,8 @@ public class AdminView extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         advnu = new javax.swing.JButton();
-        adph = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
@@ -68,16 +66,6 @@ public class AdminView extends javax.swing.JFrame {
         jPanel4.add(advnu);
         advnu.setBounds(60, 140, 130, 40);
 
-        adph.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        adph.setText("Add Photographer");
-        adph.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adphActionPerformed(evt);
-            }
-        });
-        jPanel4.add(adph);
-        adph.setBounds(60, 200, 200, 40);
-
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setText("Add Budget");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +74,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton2);
-        jButton2.setBounds(60, 260, 140, 40);
+        jButton2.setBounds(60, 230, 140, 40);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton3.setText("Booking Details");
@@ -97,16 +85,6 @@ public class AdminView extends javax.swing.JFrame {
         });
         jPanel4.add(jButton3);
         jButton3.setBounds(60, 320, 180, 40);
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setText("Add music system");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton4);
-        jButton4.setBounds(60, 380, 193, 40);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setText("Cancel");
@@ -153,23 +131,19 @@ public class AdminView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void advnuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_advnuActionPerformed
-       
+       advenue av = new advenue();
+               this.hide();
+               av.setVisible(true);
     }//GEN-LAST:event_advnuActionPerformed
-
-    private void adphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adphActionPerformed
-        
-    }//GEN-LAST:event_adphActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        admenu am = new admenu();
+        this.hide();
+        am.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -212,12 +186,10 @@ public class AdminView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton adph;
     private javax.swing.JButton advnu;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
