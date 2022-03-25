@@ -30,8 +30,6 @@ public class UserView extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
@@ -47,7 +45,7 @@ public class UserView extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Venue.jpg"))); // NOI18N
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(70, 90, 150, 210);
+        jLabel2.setBounds(130, 90, 150, 210);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setText("View Venue");
@@ -57,21 +55,7 @@ public class UserView extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(70, 300, 150, 50);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_1viewph.jpg"))); // NOI18N
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(250, 90, 200, 210);
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setText("View Photography");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton3);
-        jButton3.setBounds(250, 300, 200, 50);
+        jButton2.setBounds(130, 300, 150, 50);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("View Music System");
@@ -81,25 +65,25 @@ public class UserView extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton4);
-        jButton4.setBounds(480, 300, 170, 50);
+        jButton4.setBounds(360, 300, 170, 50);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_1viewmu.jpg"))); // NOI18N
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(480, 90, 170, 210);
+        jLabel5.setBounds(360, 90, 170, 210);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton5.setText("View Menu");
+        jButton5.setText("View Platter");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
         jPanel2.add(jButton5);
-        jButton5.setBounds(680, 300, 140, 50);
+        jButton5.setBounds(610, 300, 143, 50);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_menu.jpg"))); // NOI18N
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(680, 90, 140, 210);
+        jLabel6.setBounds(610, 90, 150, 210);
 
         jButton6.setFont(new java.awt.Font("Vivaldi", 3, 36)); // NOI18N
         jButton6.setText("Book Now");
@@ -109,7 +93,7 @@ public class UserView extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton6);
-        jButton6.setBounds(360, 400, 213, 80);
+        jButton6.setBounds(330, 400, 213, 80);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 36)); // NOI18N
         jLabel1.setText("UserView");
@@ -125,7 +109,7 @@ public class UserView extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(773, 552, 117, 37);
+        jButton1.setBounds(750, 530, 117, 37);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_—pngtree—beautiful_petal_plant_wedding_background_977952.jpg"))); // NOI18N
         jPanel2.add(jLabel3);
@@ -163,31 +147,29 @@ public class UserView extends javax.swing.JFrame {
         l.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        photographer ph = new photographer();
-        this.hide();
-        ph.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        advenue vn = new advenue();
-                this.hide();
-                vn.setVisible(true);
+        //venue button
+        usvenue uv = new usvenue();
+        this.hide();
+        uv.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Music m = new Music();
+        //music photographer button
+        PhotoMusic pm = new PhotoMusic();
         this.hide();
-        m.setVisible(true);
+        pm.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        menu me = new menu();
+        //menu button
+        usmenu um = new usmenu();
         this.hide();
-        me.setVisible(true);
+        um.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        //booking button
         booking b = new booking();
         this.hide();
         b.setVisible(true);
@@ -231,14 +213,12 @@ public class UserView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;

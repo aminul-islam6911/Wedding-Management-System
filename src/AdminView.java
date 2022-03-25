@@ -67,7 +67,7 @@ public class AdminView extends javax.swing.JFrame {
         advnu.setBounds(60, 140, 130, 40);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setText("Add Budget");
+        jButton2.setText("Add Menu");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
