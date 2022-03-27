@@ -44,7 +44,7 @@ public class login extends javax.swing.JFrame {
         jPanel2.setLayout(null);
 
         btnnewuser.setBackground(new java.awt.Color(0, 153, 153));
-        btnnewuser.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
+        btnnewuser.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
         btnnewuser.setForeground(new java.awt.Color(51, 51, 51));
         btnnewuser.setText("Sign Up");
         btnnewuser.addActionListener(new java.awt.event.ActionListener() {
@@ -53,12 +53,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnnewuser);
-        btnnewuser.setBounds(300, 380, 87, 40);
+        btnnewuser.setBounds(390, 390, 130, 50);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Password");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(300, 260, 140, 35);
+        jLabel3.setBounds(410, 260, 140, 35);
 
         txtuser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,10 +66,10 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(txtuser);
-        txtuser.setBounds(460, 210, 165, 35);
+        txtuser.setBounds(570, 210, 165, 35);
 
         btncancel.setBackground(new java.awt.Color(255, 51, 51));
-        btncancel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
+        btncancel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
         btncancel.setText("Cancel");
         btncancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +77,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btncancel);
-        btncancel.setBounds(530, 380, 100, 40);
+        btncancel.setBounds(690, 390, 130, 50);
 
         txtpass.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -85,10 +85,10 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(txtpass);
-        txtpass.setBounds(460, 260, 165, 35);
+        txtpass.setBounds(570, 260, 165, 35);
 
         usrsignbt.setBackground(new java.awt.Color(0, 255, 0));
-        usrsignbt.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
+        usrsignbt.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
         usrsignbt.setText("Sign In");
         usrsignbt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,24 +96,25 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(usrsignbt);
-        usrsignbt.setBounds(410, 380, 100, 40);
+        usrsignbt.setBounds(540, 390, 130, 50);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("Username");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(300, 210, 140, 35);
+        jLabel2.setBounds(410, 210, 140, 35);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel6.setText("Customer");
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(360, 130, 174, 44);
+        jLabel6.setBounds(360, 90, 174, 44);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         jLabel1.setText("Login");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(380, 10, 174, 61);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
         jLabel4.setText("Are you Admin");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -121,9 +122,9 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jLabel4);
-        jLabel4.setBounds(20, 550, 140, 30);
+        jLabel4.setBounds(700, 540, 180, 30);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_tumblr_nsd09yjbo11urfkmqo1_1280.jpg"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Loginpage.jpg"))); // NOI18N
         jPanel2.add(jLabel8);
         jLabel8.setBounds(0, 0, 900, 600);
 

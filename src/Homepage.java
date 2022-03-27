@@ -53,7 +53,7 @@ public class Homepage extends javax.swing.JFrame {
         jPanel2.add(jButton1);
         jButton1.setBounds(320, 440, 250, 90);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel6.setText("About Us");
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -61,7 +61,7 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(760, 550, 70, 15);
+        jLabel6.setBounds(740, 550, 90, 22);
         jPanel2.add(jLabel7);
         jLabel7.setBounds(230, 180, 434, 127);
 

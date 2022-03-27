@@ -28,8 +28,9 @@ public class AdminView extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         advnu = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -40,6 +41,31 @@ public class AdminView extends javax.swing.JFrame {
 
         jPanel4.setLayout(null);
 
+        jPanel2.setBackground(new java.awt.Color(255, 204, 204));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setText("Admin Panel");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(310, 310, 310)
+                .addComponent(jLabel1)
+                .addContainerGap(362, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(27, 27, 27))
+        );
+
+        jPanel4.add(jPanel2);
+        jPanel2.setBounds(0, 0, 900, 100);
+
         jButton1.setBackground(new java.awt.Color(255, 102, 102));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton1.setText("Logout");
@@ -49,12 +75,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton1);
-        jButton1.setBounds(760, 540, 117, 40);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setText("Admin Panel");
-        jPanel4.add(jLabel1);
-        jLabel1.setBounds(318, 11, 228, 44);
+        jButton1.setBounds(440, 510, 117, 40);
 
         advnu.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         advnu.setText("Add Venue");
@@ -64,7 +85,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(advnu);
-        advnu.setBounds(60, 140, 130, 40);
+        advnu.setBounds(140, 170, 130, 40);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setText("Add Menu");
@@ -74,7 +95,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton2);
-        jButton2.setBounds(60, 230, 140, 40);
+        jButton2.setBounds(140, 260, 140, 40);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton3.setText("Booking Details");
@@ -84,7 +105,7 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton3);
-        jButton3.setBounds(60, 320, 180, 40);
+        jButton3.setBounds(140, 350, 180, 40);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setText("Cancel");
@@ -94,7 +115,9 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton5);
-        jButton5.setBounds(610, 540, 130, 40);
+        jButton5.setBounds(290, 510, 130, 40);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/adminview.png"))); // NOI18N
         jPanel4.add(jLabel4);
         jLabel4.setBounds(0, 0, 900, 600);
 
@@ -147,7 +170,9 @@ public class AdminView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        adbooking ab = new adbooking();
+        this.hide();
+        ab.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -194,6 +219,7 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

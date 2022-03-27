@@ -74,6 +74,7 @@ public class adbooking extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -212,6 +213,14 @@ public class adbooking extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("Total Amont");
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setText("Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -281,7 +290,9 @@ public class adbooking extends javax.swing.JFrame {
                                 .addComponent(jLabel12)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(268, 268, 268))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addGap(177, 177, 177))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,7 +334,8 @@ public class adbooking extends javax.swing.JFrame {
                             .addComponent(jCheckBox3)
                             .addComponent(jCheckBox4)
                             .addComponent(jButton4)
-                            .addComponent(jButton5)))
+                            .addComponent(jButton5)
+                            .addComponent(jButton1)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
@@ -435,6 +447,12 @@ private void getmenu()
     private void venuecbPopupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent evt) {//GEN-FIRST:event_venuecbPopupMenuWillBecomeInvisible
 
     }//GEN-LAST:event_venuecbPopupMenuWillBecomeInvisible
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        AdminView av = new AdminView();
+        this.hide();
+        av.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 public void booking_load()
 {
     int c;
@@ -519,6 +537,7 @@ public void booking_load()
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable adbookingtbl;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jCheckBox1;
