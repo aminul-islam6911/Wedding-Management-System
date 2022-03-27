@@ -58,14 +58,14 @@ public class UserView extends javax.swing.JFrame {
         jButton2.setBounds(130, 300, 150, 50);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton4.setText("View Music System");
+        jButton4.setText("View Photography Music");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
         jPanel2.add(jButton4);
-        jButton4.setBounds(360, 300, 170, 50);
+        jButton4.setBounds(340, 300, 210, 50);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rsz_1viewmu.jpg"))); // NOI18N
         jPanel2.add(jLabel5);
